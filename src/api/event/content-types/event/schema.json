@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "singularName": "event",
+    "pluralName": "events",
+    "displayName": "events",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "default": "NFTLAB",
+      "required": true
+    },
+    "hype": {
+      "type": "string",
+      "required": true
+    },
+    "twitter": {
+      "type": "string",
+      "required": true
+    },
+    "Discord": {
+      "type": "string",
+      "required": true
+    },
+    "Category": {
+      "type": "string",
+      "required": true,
+      "default": "solana"
+    },
+    "Dox": {
+      "type": "boolean",
+      "default": true
+    },
+    "Utility": {
+      "type": "string",
+      "required": true,
+      "default": "Good"
+    },
+    "Art": {
+      "type": "string",
+      "required": true,
+      "default": "Good"
+    },
+    "spply": {
+      "type": "string",
+      "required": true,
+      "default": "1111"
+    },
+    "link_discord": {
+      "type": "string",
+      "required": true,
+      "default": "https://discord.gg/F2Cm9AD78h"
+    },
+    "link_market": {
+      "type": "string",
+      "required": true
+    },
+    "link_twitter": {
+      "type": "string",
+      "required": true
+    },
+    "fomo": {
+      "type": "string",
+      "required": true
+    },
+    "name_collection": {
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "events"
+    },
+    "image": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
